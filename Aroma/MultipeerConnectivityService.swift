@@ -64,6 +64,7 @@ class MultipeerConnectivityService: NSObject {
   
   func sendMessage(data: NSData, error: NSErrorPointer) {
     session?.sendData(data, toPeers: session?.connectedPeers, withMode: .Reliable, error: error)
+    println("Datat sent to nearbly devices")
   }
 }
 

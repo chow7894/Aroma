@@ -27,14 +27,15 @@ class ReserveTableViewController: UIViewController {
   @IBOutlet var nameTextField: UITextField!
   @IBOutlet var partySizeTextField: UITextField!
   
-  var completion: ((name: String, partySize: Int) -> ())?
+  var completion: ((name: String, partySize: String) -> ())?
   
   required init(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
   }
   
   @IBAction func done(sender: UIButton) {
-    completion?(name: nameTextField.text, partySize: partySizeTextField.text.toInt() ?? 1)
+    //completion?(name: nameTextField.text, partySize: partySizeTextField.text.toInt() ?? 1)
+    completion?(name: nameTextField.text, partySize: partySizeTextField.text)
     dismissViewControllerAnimated(true, completion: nil)
   }
   

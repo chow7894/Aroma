@@ -101,7 +101,6 @@
 				835082581A194CC700A3B7B6 /* RestaurantDetailService.swift */,
 				8350825A1A194CD000A3B7B6 /* Restaurant.swift */,
 				8350825C1A194CD900A3B7B6 /* ReserveTableViewController.swift */,
-				6D8323E01BA02BFA0008A9A8 /* BeaconMonitoringService.swift */,
 			);
 			path = Aroma;
 			sourceTree = "<group>";
@@ -134,6 +133,7 @@
 		835082501A194C7800A3B7B6 /* iBeacon */ = {
 			isa = PBXGroup;
 			children = (
+				6D8323E01BA02BFA0008A9A8 /* BeaconMonitoringService.swift */,
 			);
 			name = iBeacon;
 			sourceTree = "<group>";
